@@ -4,6 +4,14 @@ spring:
     password: root
     url: jdbc:mysql://101.132.191.22:3306/shopmall_sms
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.132.191.22:8848
+  application:
+    name: shopmall-coupon
+
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
